@@ -11,18 +11,18 @@ const FlashSale = () => {
   });
 
   const sales = [
-    { name: 'HAVIT HV-G92 Gamepad', price: 120, discount: 40, rating: 4.5, reviews: 88, image: '/gamepad.png' },
-    { name: 'AK-900 Wired Keyboard', price: 960, discount: 35, rating: 4.7, reviews: 75, image: '/keyboard.png' },
-    { name: 'IPS LCD Gaming Monitor', price: 370, discount: 30, rating: 4.8, reviews: 99, image: '/computer.png' },
-    { name: 'S-Series Comfort Chair', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/chair.png' },
-    { name: 'S-Series Comfort Chair', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/chair.png' },
+    { name: 'HAVIT HV-G92 Gamepad', price: 120, discount: 40, rating: 4.5, reviews: 88, image: '/Images/redpad (1).png' },
+    { name: 'AK-900 Wired Keyboard', price: 960, discount: 35, rating: 4.7, reviews: 75, image: '/Images/keyboard.png' },
+    { name: 'IPS LCD Gaming Monitor', price: 370, discount: 30, rating: 4.8, reviews: 99, image: '/Images/tv.png' },
+    { name: 'S-Series Comfort Chair', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/Images/chair.png' },
+    { name: 'S-Series Comfort Chair', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/Images/chair.png' },
   ];
 
   return (
     <section className="py-10 px-4 -mt-88">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <h2 className="text-2xl font-bold ml-50">
-          <span className='text-red-600 text-sm'>Today&aposs</span> <br></br>Flash Sales</h2>
+          <span className='text-red-600 text-sm'>Today& aposs</span> <br></br>Flash Sales</h2>
 
         <div className="flex space-x-2 text-center mr-280">
           <div className="bg-gray-200 px-3 py-2 rounded">
@@ -52,7 +52,8 @@ const FlashSale = () => {
         {sales.map((sale, index) => (
           <div key={index} className="min-w-[200px] bg-white shadow-md rounded-lg p-4 text-center">
             <Image 
-            src="/Images/redpad (1).png" alt={sale.name} 
+            src={sale.image}
+            alt={sale.name}
             width={100}
             height={100} />
             <div className="text-red-600 font-bold">-{sale.discount}%</div>

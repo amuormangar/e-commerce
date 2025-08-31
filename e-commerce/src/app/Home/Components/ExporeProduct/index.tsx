@@ -3,10 +3,10 @@ import React from 'react';
 
 const ExploreProducts = () => {
   const products = [
-    { name: 'The north coat', price: 120, discount: 40, rating: 4.5, reviews: 88, image: '/jacket.png' },
-    { name: 'Gucci duffle bag', price: 960, discount: 35, rating: 4.7, reviews: 75, image: '/bag.png' },
-    { name: 'RGB liquid CPU Cooler', price: 370, discount: 30, rating: 4.8, reviews: 99, image: '/cooler.png' },
-    { name: 'Small BookSelf', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/desk.png' },
+    { name: 'The north coat', price: 120, discount: 40, rating: 4.5, reviews: 88, image: '/Images/pink_jacket.png' },
+    { name: 'gucci duffle bag', price: 960, discount: 35, rating: 4.7, reviews: 75, image: '/Images/gucci_bag.png' },
+    { name: 'RGB liquid CPU Cooler', price: 370, discount: 30, rating: 4.8, reviews: 99, image: '/Images/liquid_cpu.png' },
+    { name: 'Small BookSelf', price: 375, discount: 25, rating: 4.6, reviews: 98, image: '/Images/bookFurniture-removebg-preview.png' },
   ];
 
   return (
@@ -25,7 +25,7 @@ const ExploreProducts = () => {
           {products.map((product, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg p-4 text-center">
               <Image
-                src={"/Images/pink_jacket.png"}
+                src={product.image}
                 alt={product.name}
                 width={240}
                 height={192}

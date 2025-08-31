@@ -27,16 +27,14 @@ function Menu() {
             </aside>
 
 
-            <div className="flex-1 mt-20 ml-30">
+            <div className="flex-1 mt-20 ml-93">
                 <Image
                     src="/Images/iphone.jpg"
                     alt="Home page image"
                     width={800}
                     height={500}
-
                 />
             </div>
-
         </div>
     );
 }

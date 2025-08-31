@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FaGooglePlay, FaApple, FaTwitter, FaInstagram ,FaLinkedinIn,FaFacebookF} from 'react-icons/fa';
+import {FaTwitter, FaInstagram ,FaLinkedinIn,FaFacebookF} from 'react-icons/fa';
 import { MdSend } from "react-icons/md";
 const Footer = ()=>{
     return(
@@ -20,7 +20,7 @@ const Footer = ()=>{
         className="hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors flex items-center justify-center"
         aria-label="Send email"
       >
-        <MdSend className="text-white" />
+        <MdSend className="text-white"/>
       </button>
       </div>
         </div>
@@ -34,17 +34,19 @@ const Footer = ()=>{
     
     <div>
         <h1>Account</h1>
-        <h3>Login/Register</h3>
+        <h3><Link href="/login">Login/Register</Link></h3>
+        
         <h3>Cart</h3>
         <h3>Wishlist</h3>
         <h3>Shop</h3>
     </div>
     <div>
-        <h1>Quick Link</h1>
-        <h3>Privacy Policy</h3>
-        <h3>Terms of use </h3>
-         <h3>FAQ </h3>
-          <h3>Contact</h3>
+          
+          <Link href=""><h1>Quick Link</h1></Link>
+          <Link href=""><h3>Privacy Policy</h3></Link>
+          <Link href=""><h3>Terms of use </h3></Link>
+          <Link href=""><h3>FAQ </h3></Link>
+           <Link href=""><h3>Contact</h3></Link>
     </div>
    <div>
          <div>

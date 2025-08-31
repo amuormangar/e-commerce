@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const BestSellingProducts = () => {
   const products = [
-    { name: 'Breed Dry Dog Food', price: 100, discount: 35, rating: 3, reviews: 88, image: '/Breed.jpg' },
-    { name: 'CANON EOS DSLR Camera', price: 360, discount: 95, rating: 4, reviews: 75, image: '/canoncam.png' },
-    { name: 'ASUS FHD Gaming laptop', price: 700, discount: 30, rating: 5, reviews: 325, image: '/laptop.png' },
-    { name: 'Curology Product Set', price: 500, discount: 25, rating: 4.6, reviews: 145, image: '/curology.png' },
-    { name: 'Kids Electric Car', price: 960, discount: 40, rating: 4.5, reviews: 88, image: '/car.png'},
-    { name: 'Jr.Zoom Soccer Cleats', price: 1160, discount: 35, rating: 5, reviews: 75, image: '/shoes.png' },
-    { name: 'GP11 Shooter USB Gamepad', price: 660, discount: 30, rating: 4.8, reviews: 99, image: '/PS.png' },
-    { name: 'Quilted Satin Jacket', price: 660, discount: 25, rating: 4.6, reviews: 98, image: '/sweater.png' },
+    { name: 'Breed Dry Dog Food', price: 100, discount: 35, rating: 3, reviews: 88, image: '/Images/choco.jpg' },
+    { name: 'CANON EOS DSLR Camera', price: 360, discount: 95, rating: 4, reviews: 75, image: '/Images/canon_camera.png' },
+    { name: 'ASUS FHD Gaming laptop', price: 700, discount: 30, rating: 5, reviews: 325, image: '/Images/laptop-removebg-preview (1).png' },
+    { name: 'Curology Product Set', price: 500, discount: 25, rating: 4.6, reviews: 145, image: '/Images/curology.png' },
+    { name: 'Kids Electric Car', price: 960, discount: 40, rating: 4.5, reviews: 88, image: '/Images/car (1).png'},
+    { name: 'Jr.Zoom Soccer Cleats', price: 1160, discount: 35, rating: 5, reviews: 75, image: '/Images/boot.png' },
+    { name: 'GP11 Shooter USB Gamepad', price: 660, discount: 30, rating: 4.8, reviews: 99, image: '/Images/blackpad (1).png' },
+    { name: 'Quilted Satin Jacket', price: 660, discount: 25, rating: 4.6, reviews: 98, image: '/Images/jacket (1).png'},
   ];
 
    return (
@@ -18,7 +18,8 @@ const BestSellingProducts = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mb-6">
         <div>
           <h2 className="text-2xl font-bold ml-12">
-            <span className="text-red-600 text-sm">Our Products</span><br />
+            <span className="text-red-600 text-sm">Our Products</span>
+            <br/>
             Explore Our products
           </h2>
         </div>
@@ -34,7 +35,7 @@ const BestSellingProducts = () => {
           return (
             <div key={index} className="bg-white shadow-md rounded-lg p-4 text-center">
               <Image
-                src={"/Images/canon-removebg-preview (1).png"}
+                src={product.image}
                 alt={product.name}
                 width={240}
                 height={192}
